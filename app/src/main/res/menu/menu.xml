@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_plus"
+        android:icon="@drawable/icon_plus"
+        android:title="Добавить" />
+
+    <item
+        android:id="@+id/navigation_minus"
+        android:icon="@drawable/ic_minus"
+        android:title="Вычесть" />
+
+    <item
+        android:id="@+id/navigation_reg"
+        android:title="Регистрация" />
+
+</menu>
