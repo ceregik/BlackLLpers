@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -10,16 +9,126 @@
     tools:context="com.example.blackllpers.reg"
     >
 
+
+    <EditText
+        android:id="@+id/name2"
+        android:layout_width="214dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/primitibe_edit"
+        android:hint="Иван"
+        android:textColor="@color/colormain"
+        android:textColorHighlight="@color/colormain2"
+        android:textColorHint="@color/colormain2_2"
+        android:textColorLink="@color/colormain2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
     <TextView
-        android:id="@+id/tv_home"
-        android:textColor="#FFFFFF"
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="30"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/sourcesanspro"
+        android:gravity="center"
+        android:text="Введите имя"
+        android:textAllCaps="false"
+        android:textColor="@color/colormain2"
+        android:textIsSelectable="false"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name" />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="214dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/primitibe_edit"
+        android:ems="10"
+        android:hint="+7(900) 000-00-00"
+        android:inputType="phone"
+        android:textColor="@color/colormain"
+        android:textColorHighlight="@color/colormain2"
+        android:textColorHint="@color/colormain2_2"
+        android:textColorLink="@color/colormain2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <Button
+        android:id="@+id/change"
+        android:layout_width="0dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="128dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:background="@drawable/primary_btn"
+        android:text="Зарегестрировать"
+        android:textAllCaps="false"
+        android:textColor="@color/colormain2"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name2" />
+
+    <TextView
+        android:id="@+id/textnumber"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Регестрация"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/sourcesansprobold"
+        android:text="Регистрация"
+        android:textColor="@color/colormain"
+        android:textSize="25sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="30"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/sourcesanspro"
+        android:gravity="center"
+        android:text="Введите номер"
+        android:textAllCaps="false"
+        android:textColor="@color/colormain2"
+        android:textIsSelectable="false"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textnumber" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/change"
+        app:layout_constraintEnd_toEndOf="@+id/change"
+        app:layout_constraintTop_toTopOf="@+id/change" />
+
+    <TextView
+        android:id="@+id/error"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="#9C0000"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="205dp"
+        tools:layout_editor_absoluteY="415dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

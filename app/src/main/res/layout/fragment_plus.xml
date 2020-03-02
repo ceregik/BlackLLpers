@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -10,16 +9,171 @@
     tools:context="com.example.blackllpers.plus"
     >
 
+
+    <EditText
+        android:id="@+id/add"
+        android:layout_width="158dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/primitibe_edit"
+        android:ems="10"
+        android:hint="900"
+        android:inputType="number"
+        android:textColor="@color/colormain"
+        android:textColorHighlight="@color/colormain2"
+        android:textColorHint="@color/colormain2_2"
+        android:textColorLink="@color/colormain2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_add" />
+
     <TextView
-        android:id="@+id/tv_home"
-        android:textColor="#FFFFFF"
+        android:id="@+id/text_add"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Плюс"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/sourcesanspro"
+        android:gravity="center"
+        android:text="Начислить бонусов"
+        android:textAllCaps="false"
+        android:textColor="@color/colormain2"
+        android:textIsSelectable="false"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/delete" />
+
+    <Button
+        android:id="@+id/add_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="29dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:background="@drawable/primary_btn"
+        android:text="Добавить"
+        android:textAllCaps="false"
+        android:textColor="@color/colormain2"
+        android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/add"
+        app:layout_constraintTop_toTopOf="@+id/add" />
+
+    <EditText
+        android:id="@+id/delete"
+        android:layout_width="158dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/primitibe_edit"
+        android:ems="10"
+        android:hint="900"
+        android:inputType="number"
+        android:textColor="@color/colormain"
+        android:textColorHighlight="@color/colormain2"
+        android:textColorHint="@color/colormain2_2"
+        android:textColorLink="@color/colormain2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_delete" />
+
+    <TextView
+        android:id="@+id/text_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/sourcesanspro"
+        android:gravity="center"
+        android:text="Начислить 10% от"
+        android:textAllCaps="false"
+        android:textColor="@color/colormain2"
+        android:textIsSelectable="false"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/PhoneNumber" />
+
+    <EditText
+        android:id="@+id/PhoneNumber"
+        android:layout_width="166dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/primitibe_edit"
+        android:ems="10"
+        android:hint="+7(900) 000-00-00"
+        android:inputType="phone"
+        android:textColor="@color/colormain"
+        android:textColorHighlight="@color/colormain2"
+        android:textColorHint="@color/colormain2_2"
+        android:textColorLink="@color/colormain2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_phone" />
+
+    <Button
+        android:id="@+id/scan_btn"
+        android:layout_width="150dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/primary_btn"
+        android:text="Сканировать"
+        android:textAllCaps="false"
+        android:textColor="@color/colormain2"
+        android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/delete_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="29dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:background="@drawable/primary_btn"
+        android:text="Добавить"
+        android:textAllCaps="false"
+        android:textColor="@color/colormain2"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/delete"
+        app:layout_constraintTop_toTopOf="@+id/delete" />
+
+    <TextView
+        android:id="@+id/text_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/sourcesanspro"
+        android:gravity="center"
+        android:text="Или номер телефона"
+        android:textAllCaps="false"
+        android:textColor="@color/colormain2"
+        android:textIsSelectable="false"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scan_btn" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/sourcesanspro"
+        android:gravity="center"
+        android:textAllCaps="false"
+        android:textColor="@color/colormain2"
+        android:textIsSelectable="false"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.16"
+        app:layout_constraintStart_toEndOf="@+id/PhoneNumber"
+        app:layout_constraintTop_toTopOf="@+id/PhoneNumber" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
